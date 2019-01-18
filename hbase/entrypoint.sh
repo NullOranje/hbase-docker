@@ -35,10 +35,3 @@ echo "Configuring modules in ${HBASE_HOME}"
 configure $HBASE_PREFIX/conf/hbase-site.xml hbase HBASE_CONF
 
 exec $@
-
-# prop_replace 'hbase.rootdir'                               '${HBASE_ROOT_DIR:-hdfs://localhost:8020/hbase}'
-# prop_replace 'hbase.unsafe.stream.capability.enforce'      '${HBASE_UNSAFE_STREAM:-false}'
-# prop_replace 'hbase.cluster.distributed'                   '${HBASE_DISTRIBUTED:-true}'
-# prop_replace 'hbase.local.dir'                             '${HBASE_DATA_DIR:-/opt/hbase/data}'
-# prop_replace 'hbase.master.port'                           '${HBASE_MASTER_PORT}:-16000}'
-# prop_replace 'hbase.zookeeper.quorum'                      '${HBASE_ZK_QUORUM:-localhost}'
